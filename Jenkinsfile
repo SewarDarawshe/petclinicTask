@@ -1,6 +1,6 @@
 pipeline{
 
-agent { label - slave } 
+agent { label : 'slave' } 
 
 stages{
 
@@ -14,6 +14,7 @@ stage('enter file'){
 steps{
 script{
  cd spring-petclinic
+
 }
 }
 }
