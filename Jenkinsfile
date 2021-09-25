@@ -1,6 +1,15 @@
 pipeline{
-agent slave;
-echo "hiiiiiiiiiiiiiiii "
+agent any
+
+stages{
+
+stage('try'){
+
+steps{
+echo 'hiii' 
+}
+}
+}
 } 
 
 
