@@ -1,5 +1,6 @@
 pipeline{
-agent slave
+agent any 
+
 stages{
 
 stage('cloning git project'){
