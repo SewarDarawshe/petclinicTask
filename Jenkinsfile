@@ -15,7 +15,7 @@ stage('enter file'){
 steps{
  cd spring-petclinic
 }
-}
+
 }
 stage('build'){
 steps{
