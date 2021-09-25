@@ -17,7 +17,8 @@ steps{
 script{
 
 
-./mvnw package
+
+"./mvnw package"
 }
 }
 
