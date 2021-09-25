@@ -19,8 +19,10 @@ steps{
 }
 stage('build'){
 steps{
+script{
 
-sh './mvnw package'
+./mvnw package
+}
 }
 
 }
