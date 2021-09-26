@@ -30,7 +30,7 @@ stage('Run')
 steps{
 
 
-sh "JENKINS_NODE_COOKIE=do_not_kill nohup java -jar target/*.jar"
+sh "JENKINS_NODE_COOKIE=do_not_kill nohup java -jar target/*.jar &"
 }
 
 }
