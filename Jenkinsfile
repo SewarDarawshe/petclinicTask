@@ -25,15 +25,6 @@ dir('spring-petclinic') {
 
 }
 
-stage('Run')
-{
-steps{
-
-
-sh "JENKINS_NODE_COOKIE=do_not_kill nohup java -jar target/*.jar &"
-}
-
-}
 
 }
 }
