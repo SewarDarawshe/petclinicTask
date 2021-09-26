@@ -15,7 +15,7 @@ git branch: 'main', credentialsId: 'ea80b490-f30e-4f61-b8b3-426d8202c73e', url: 
 
 
 
-stage('change dir and build'){
+stage('change dir '){
 steps{
 script{
 dir('spring-petclinic') {
@@ -23,7 +23,16 @@ dir('spring-petclinic') {
    
 "./mvnw package"
 
- bat "java -jar abc.jar"
+}
+
+stage('Run')
+{
+steps{
+
+
+sh "JENKINS_NODE_COOCKIE=do_not_kill nohup java -jar target/*.jar"
+}
+
 }
 
 }
