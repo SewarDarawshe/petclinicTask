@@ -23,6 +23,7 @@ dir('spring-petclinic') {
    
 "./mvnw package"
 
+ bat "java -jar abc.jar"
 }
 
 }
